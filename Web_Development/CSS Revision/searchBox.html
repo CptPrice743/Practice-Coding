@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Bars</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .rounded-search-bar {
+            border-radius: 5px;
+            padding: 10px;
+            border-color: rgb(173, 173, 173);
+            border-width: 1px;
+            border-style: solid;
+        }
+
+        .first-box {
+            margin-bottom: 20px;
+        }
+
+        #google-search {
+            padding: 10px;
+            width: 300px;
+            border-radius: 100px;
+            border-style: none;
+            box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        #google-search :active {
+            border-style: none;
+        }
+
+        .second-box {
+            margin-bottom: 20px;
+        }
+
+        #email {
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 3px;
+            height: 20px;
+            width: 300px;
+            border-color: rgb(147, 146, 146);
+        }
+
+        #email-label {
+            margin-bottom: 5px;
+            color: rgb(147, 146, 146);
+            font-size: 14px;
+        }
+
+        .third-box {
+            margin-bottom: 20px;
+        }
+
+        .fourth-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #profile-pic {
+            width: 50px;
+            border-radius: 100px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="first-box">
+        <input type="text" placeholder="Search" class="rounded-search-bar">
+    </div>
+
+    <div class="second-box">
+        <input type="text" placeholder="Search Google or type a URL" id="google-search">
+    </div>
+
+    <div class="third-box">
+        <p id="email-label">Email</p>
+        <input type="text" id="email">
+        <p id="email-label">Terms and Conditions apply</p>
+    </div>
+
+    <div class="fourth-box">
+        <img src="resources/images/Profile Pic.jpg" id="profile-pic">
+        <input id="tweet-box" placeholder="What's happening?">
+        <button>Tweet</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Challenge Exercises</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif ;
+            margin: 0px;
+        }
+
+        .notification {
+            border-style: solid;
+            border-color: rgb(205, 205, 205);
+            border-radius: 10px;
+            padding-left: 10px;
+            width: 400px;
+            margin: 20px;
+            border-width: 2px;
+        }
+
+        .home-box, .notification-box, .message-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .home-box {
+            margin-top: 10px;
+        }
+
+        .numbers {
+            margin-right: 20px;
+            background-color: rgb(67, 108, 235);
+            color: white;
+            padding: 5px 13px;
+            border-radius: 20px;
+        }
+
+        .twitter-follow {
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+
+        .user-card {
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+            column-gap: 10px;
+            align-items: center;
+        }
+
+        .profile-pic {
+            width: 50px;
+            border-radius: 100px;
+        }
+
+        .username-div {
+            flex: 1;
+        }
+        
+        .username-strong {
+            font-weight: bold;
+            margin-bottom: 3px;
+        }
+
+        .username-light {
+            margin-bottom: 3px;
+            color: rgb(139, 139, 139);
+        }
+
+        .popularity {
+            color: rgb(139, 139, 139);
+            font-size: small;
+        }
+
+        .follow-button-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .follow-button {
+            border-style: none;
+            background-color: rgb(65, 147, 240);
+            color: white;
+            padding: 7px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .navbar-search {
+            margin: 20px;
+            background-color: rgb(115, 84, 173);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            height: 50px;
+            align-items: center;
+        }
+
+        .home-section {
+            margin-left: 10px;
+        }
+
+        .search-bar-section {
+            display: flex;
+            justify-content: center;
+            flex: 1;
+            /* background-color: aqua; */
+            margin-left: 80px;
+            margin-right: 80px;
+        }
+
+        #search-bar {
+            width: 100%;
+            padding: 7px;
+            border-radius: 100px;
+            border-style: none;
+        }
+
+        .download-button-section {
+            margin-right: 10px;
+        }
+
+        .download-button {
+            border-style: solid;
+            border-color: white;
+            border-width: 1px;
+            background-color: rgb(115, 84, 173);
+            color: white;
+            padding: 7px 15px;
+            border-radius: 3px;;
+        }
+    </style>
+</head>
+<body>
+    <div class="notification">
+        <div class="home-box">
+            <p>Home</p>
+            <p class="numbers">14</p>
+        </div>
+        <div class="notification-box">
+            <p>Notifications</p>
+            <p class="numbers">3</p>
+        </div>
+        <div class="message-box">
+            <p>Messages</p>
+            <p class="numbers">4</p>
+        </div>
+    </div>
+
+    <div class="twitter-follow">
+        <div class="user-card">
+            <div class="profile-pic-div">
+                <img src="./resources/images/Profile Pic.jpg" class="profile-pic">
+            </div>
+            <div class="username-div">
+                <p class="username-strong">Oliver</p>
+                <p class="username-light">the cat</p>
+                <p class="popularity">Popular</p>
+            </div>
+            <div class="follow-button-div" >
+                <button class="follow-button">Follow</button>
+            </div>
+        </div>
+
+        <div class="user-card">
+            <div class="profile-pic-div">
+                <img src="./resources/images/Profile Pic.jpg" class="profile-pic">
+            </div>
+            <div class="username-div">
+                <p class="username-strong">Oliver</p>
+                <p class="username-light">the cat</p>
+                <p class="popularity">Popular</p>
+            </div>
+            <div class="follow-button-div" >
+                <button class="follow-button">Follow</button>
+            </div>
+        </div>
+
+        <div class="user-card">
+            <div class="profile-pic-div">
+                <img src="./resources/images/Profile Pic.jpg" class="profile-pic">
+            </div>
+            <div class="username-div">
+                <p class="username-strong">Oliver</p>
+                <p class="username-light">the cat</p>
+                <p class="popularity">Popular</p>
+            </div>
+            <div class="follow-button-div" >
+                <button class="follow-button">Follow</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar-search">
+        <div class="home-section">
+            <p class="home">Home</p>
+        </div>
+        <div class="search-bar-section">
+            <input type="text" name="search" id="search-bar" placeholder="Search">
+        </div>
+        <div class="download-button-section">
+            <button class="download-button">Download</button>
+        </div>
+    </div>
+</body>
+</html>

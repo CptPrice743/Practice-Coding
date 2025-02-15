@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Challenge</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .card-layout {
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            column-gap: 20px;
+            row-gap: 50px;
+        }
+
+        .card {
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        img {
+            width: 100%;
+            margin-bottom: 5px;
+        }
+
+        #name {
+            margin-top: 0px;
+            font-weight: bold;
+            margin-bottom: 7px;
+            margin-left: 5px;
+        }
+
+        #friends-count {
+            margin-top: 0px;
+            color: rgb(124, 124, 124);
+            font-size: 14px;
+            margin-bottom: 7px;
+            margin-left: 5px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        #add-friend-button {
+            margin-top: 0px;
+            color: white;
+            background-color: rgb(57, 117, 233);
+            border-style: none;
+            margin-bottom: 7px;
+            margin-left: 5px;
+            border-radius: 3px;
+            padding: 5px 12px;
+        }
+
+        .friends-count-div {
+            margin-bottom: 5px;
+            display: grid;
+            grid-template-columns: 30px 1fr;
+            column-gap: 10px;
+            align-items: center;
+        }
+
+        .friends-count-img {
+            border-radius: 100px;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card-layout">
+        <div class="card">
+            <img src="resources/images/Profile Pic.jpg">
+            <p id="name">Oliver</p>
+            <div class="friends-count-div">
+                <img src="./resources/images/Profile Pic.jpg" class="friends-count-img">
+                <p id="friends-count">2 mutual friends</p>
+            </div>
+            
+            <button id="add-friend-button">Add Friend</button>
+        </div>
+    
+        <div class="card">
+            <img src="resources/images/20220310_160111.jpg">
+            <p id="name">Mimi</p>
+            <div class="friends-count-div">
+                <img src="./resources/images/Profile Pic.jpg" class="friends-count-img">
+                <p id="friends-count">3 mutual friends</p>
+            </div>
+            <button id="add-friend-button">Add Friend</button>
+        </div>
+    
+        <div class="card">
+            <img src="resources/images/Profile Pic-7.jpg">
+            <p id="name">Rex</p>
+            <div class="friends-count-div">
+                <img src="./resources/images/Profile Pic.jpg" class="friends-count-img">
+                <p id="friends-count">4 mutual friends</p>
+            </div>
+            <button id="add-friend-button">Add Friend</button>
+        </div>
+    </div>
+    
+</body>
+</html>

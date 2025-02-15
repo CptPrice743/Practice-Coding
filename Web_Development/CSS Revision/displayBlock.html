@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Block</title>
+    <style>
+        #name, #email {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .text-boxes {
+            margin-bottom: 20px;
+        }
+
+        #support-text {
+            display: inline-block;
+            width: 200px;
+            vertical-align: middle;
+        }
+
+        .customer-support {
+            margin-bottom: 20px;
+        }
+
+        .input-field {
+            border-radius: 7px;
+            border-style: solid;
+            border-color: rgb(205, 205, 205);
+            border-width: 1px;
+            padding: 10px;
+            margin-bottom: 7px;
+            width: 100px;
+        }
+
+        #email {
+            display: block;
+            width: 227px;
+        }
+
+        #signup-button {
+            display: block;
+            border-style: none;
+            background-color: rgb(57, 117, 233);
+            color: white;
+            border-radius: 7px;
+            padding: 10px;
+            font-weight: bold;
+            width: 250px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="text-boxes">
+        <input type="text" placeholder="Name" id="name">
+        <input type="email" placeholder="Email" id="email">
+    </div>
+
+    <div class="customer-support">
+        <p id="support-text">Thanks for chatting with our customer support. Would you like to take our quick survey?</p>
+        <button id="support-botton">Yes</button>
+        <button id="support-botton">No</button>
+    </div>
+
+    <div class="signup-form">
+        <input type="text" placeholder="First name" class="input-field" id="firstname">
+        <input type="text" placeholder="First name" class="input-field" id="firstname">
+        <input type="email" placeholder="Email" class="input-field" id="email">
+        <button id="signup-button">Sign Up</button>
+    </div>
+</body>
+</html>

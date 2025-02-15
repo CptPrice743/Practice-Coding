@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>CalculateInterest</display-name>
+  
+  <servlet>
+  	<servlet-name>Interest</servlet-name>
+  	<servlet-class>com.InterestServlet.CalculateInterest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Interest</servlet-name>
+  	<url-pattern>/calculate</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  	<servlet-name>TotalAmount</servlet-name>
+  	<servlet-class>com.InterestServlet.TotalAmount</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Interest</servlet-name>
+  	<url-pattern>/totalamount</url-pattern>
+  </servlet-mapping>
+</web-app>
