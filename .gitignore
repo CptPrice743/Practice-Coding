@@ -1683,3 +1683,11 @@ local.properties
 
 # Locally stored "Eclipse launch configurations"
 *.launch
+
+#################################################################################################################
+# MongoDB
+*.mongodb
+*.mongo
+dump/
+*.lock
+mongod.lock
